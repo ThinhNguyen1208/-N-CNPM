@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* -------------------------menu ------------------------ */
+.container{
+    width: 100%;
+    background: #E3E3E3;
+}
+.home-menu{
+    display: flex;
+    padding: 17px;
+    background-color:rgba(17,53,139,0.77);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 0px 45px;
+    position: relative;
+    
+}
+.home-menu-logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #FFFCFC;
+    font-weight: 500;
+}
+.home-menu-logo img{
+    position: relative;
+    top: 7px;
+}
+
+
+
+.home-menu-search {
+    width: 359px;
+    height: 49px;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #525151;
+    border: none;
+    outline: none;
+    margin-left: 400px;
+
+}
+.home-menu-btn{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+}
+.home-menu-btn li{
+    display: inline-block;
+    
+}
+
+.home-menu-btn li a{
+    color: #FFFCFC;
+    text-decoration: none;
+    display:  block ;
+    padding: 15px;
+    border-radius: 25px;
+    
+}
+
+
+.home-menu-btn li a:hover{
+    background-color: #F29036;
+    color: #050505;
+}
+.home-menu-register button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FFFCFC;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 5px 15px;
+}
+
+.home-menu-register button:first-child{
+    border-right: 1px solid #FFFCFC;
+}
+
+/* -------------------------form-create ------------------------ */
+
+
+.form-create{
+    max-width: 1161px;
+    margin: 30px auto;
+}
+
+
+.form-create-bg{
+    width: 100%;
+    height: 381px;
+    background-image: url('../img/bg_team.png');
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+#changeBg-btn{
+    position: absolute;
+    padding: 10px 15px;
+    border: none;
+    outline:none;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    background-color: #FFFDFD;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+.form-create-detail{
+    padding: 85px;
+    background-color: #FFFDFD;
+}
+
+.form-create-detail-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.form-create-fields{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.form-create-img{
+    width: 245px;
+    height: 245px;
+    background: #C4C4C4;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.form-create-img h1{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.form-create-inputs{
+
+    margin-right: 30px;
+}
+
+.form-create input, select{
+    width: 595px;
+    height: 46px;
+    border:1px solid #000;
+    border-radius:5px;
+    margin-bottom: 37px;
+    outline: none;
+    font-size: 25px;
+}
+
+.form-create label{
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.form-create textarea{
+    border: 1px solid #000;
+    width: 595px;
+    outline: none;
+}
+
+#submit-form{
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+    height: 80px;
+    background: #1F720B;
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}

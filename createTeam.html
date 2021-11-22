@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Team</title>
+    <link rel="stylesheet" href="./plugin/css/all.css">
+    <link rel="stylesheet" href="./css/createTeam.css">
+</head>
+<body>
+    <div class="container">
+        <div class="home-menu">
+            <div class="home-menu-logo">
+                <img src="./img/pngwing 1.png" alt="">
+                <h1>My Champion</h1>
+            </div>
+            <input class="home-menu-search" type="text" placeholder="Tìm giải đấu, đội bóng,...">
+            <ul class="home-menu-btn">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giải đấu</a></li>
+                <li><a href="#">Đội thi đấu</a></li>
+                <li><a href="#">Lịch thi đấu</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+            </ul>
+            <div class="home-menu-register">
+                <button>Đăng nhập</button>
+                <button>Đăng ký</button>
+            </div>
+        </div>
+        <div class="form-create">
+            <div class="form-create-bg">
+    
+                <input type="file" name="background" id="background" accept="image/png, image/jpeg" style="display:none" >
+                <button id = "changeBg-btn"><i class="fas fa-camera" style="margin-right: 5px;"></i> Đổi ảnh nền</button>
+            </div>
+            <div class="form-create-detail">
+                <h3 class="form-create-detail-title">TẠO ĐỘI</h3>
+                <div class="form-create-fields">
+                    <div class="form-create-imgs">
+                        <div class="form-create-img">
+                            <input type="file" value = "chọn ảnh đại diện" style="display: none;">
+                            <h1>Chọn ảnh đại diện</h1>
+                        </div>
+                        <div class="form-create-img">
+                            <input type="file" value = "chọn ảnh đại diện" style="display: none;">
+                            <h1>Đồng phục 1</h1>
+                        </div>
+                        <div class="form-create-img">
+                            <input type="file" value = "chọn ảnh đại diện" style="display: none;">
+                            <h1>Đồng phục 2</h1>
+                        </div>
+                    </div>
+                    <div class="form-create-inputs">
+                        <form action="">
+                            <label for="teamName">Tên đội bóng</label> <br>
+                            <input type="text" name="teamName" id="teamName"> <br>
+    
+                            <label for="level">Trình độ</label> <br>
+                            <input type="text" name="level" id="level"> <br>
+    
+                            <label for="phoneNumber">SĐT liên hệ</label> <br>
+                            <input type="text" name="phoneNumber" id="phoneNumber"> <br>
+    
+                            <label for="email">Email liên hệ</label> <br>
+                            <input type="email" name="email" id="email"> <br>
+    
+                            <label for="age">Độ tuổi</label> <br>
+                            <input type="number" name="age" id="age"> <br>
+    
+                            <label for="area">Khu vực hoạt động</label> <br>
+                            <input type="text" name="area" id="area"> <br>
+    
+                            <label for="time">Thời gian hoạt động</label> <br>
+                            <input type="text" name="time" id="time"> <br>
+    
+                            <label for="gender">Giới tính</label> <br>
+                            <select name="gender" id="gender">
+                                <option > chọn giới tính</option>
+                                <option value="Nam">Nam</option>
+                                <option value ="Nữ">Nữ</option>
+                                <option value ="Khác">Khác</option>
+                            </select>
+                            <br>
+                            <label for="introduction">Giới thiệu</label> <br>
+                            <textarea name="introduction" id="introduction" cols="30" rows="10" style="resize: none"></textarea> <br>
+                           
+                            <input type="submit" value="LƯU" id="submit-form"> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <script>
+        var changeBg_btn = document.querySelector("#changeBg-btn");
+        var background = document.querySelector("#background");
+        changeBg_btn.onclick = function(){
+            background.click();
+        }
+    </script>
+</body>
+</html>
