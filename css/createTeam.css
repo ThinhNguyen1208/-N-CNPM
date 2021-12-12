@@ -11,17 +11,21 @@
 /* -------------------------menu ------------------------ */
 .container{
     width: 100%;
-    background: #E3E3E3;
+    background: #AEB9D9;
+    
 }
 .home-menu{
     display: flex;
-    padding: 17px;
+    padding: 5px;
     background-color:rgba(17,53,139,0.77);
     align-items: center;
     justify-content: space-between;
     border-radius: 0px 0px 0px 45px;
-    position: relative;
-    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
 }
 .home-menu-logo{
     display: flex;
@@ -32,32 +36,19 @@
 }
 .home-menu-logo img{
     position: relative;
-    top: 7px;
+    top: 3px;
+    width: 24%;
 }
 
-
-
-.home-menu-search {
-    width: 359px;
-    height: 49px;
-    padding: 15px;
-    border-radius: 50px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #525151;
-    border: none;
-    outline: none;
-    margin-left: 400px;
-
-}
 .home-menu-btn{
     font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 23px;
-
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 350px;
 }
+
 .home-menu-btn li{
     display: inline-block;
     
@@ -69,7 +60,7 @@ line-height: 23px;
     display:  block ;
     padding: 15px;
     border-radius: 25px;
-    
+
 }
 
 
@@ -77,34 +68,103 @@ line-height: 23px;
     background-color: #F29036;
     color: #050505;
 }
-.home-menu-register button{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: #FFFCFC;
-    font-size: 20px;
-    line-height: 1.5;
-    padding: 5px 15px;
+
+.home-menu-register{
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+    margin-right: 30px;
+    align-items: center;
+    color: #fff;
 }
 
-.home-menu-register button:first-child{
-    border-right: 1px solid #FFFCFC;
+.home-menu-register .far {
+    font-size: 18px;
+    color: #fff;
+}
+
+.home-menu-register .avatar-name{
+    display: flex;
+    align-items: center;
+}
+
+.home-menu-register .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.home-menu-register .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.home-menu-register .pop-up-menu{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-color: #e2e4e9;
+    text-align: center;
+    line-height: 30px;
+    color: #050505;
+    font-size: 19px;
+    cursor: pointer;
+    position: relative;
+}
+
+.pop-up-submenu{
+    width: 300px;
+    position: absolute;
+    right: 25%;
+    top: 130%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #272626;
+    display: none;
+}
+
+.pop-up-submenu.active{
+    display: block;
+}
+
+.pop-up-submenu ul{
+    list-style: none;
+    text-align: left;
+}
+
+.pop-up-submenu ul li{
+    padding: 10px 0;
+}
+
+.pop-up-submenu .fas{
+   margin-right: 10px;
+}
+
+.pop-up-submenu span{
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* -------------------------form-create ------------------------ */
 
 
 .form-create{
-    max-width: 1161px;
-    margin: 30px auto;
+    max-width: 900px;
+    margin: 60px auto;
+    
 }
 
 
 .form-create-bg{
     width: 100%;
-    height: 381px;
+    height: 290px;
     background-image: url('../img/bg_team.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     position: relative;
 }
@@ -116,7 +176,7 @@ line-height: 23px;
     outline:none;
     bottom: 10px;
     right: 10px;
-    font-size: 24px;
+    font-size: 20px;
     background-color: #FFFDFD;
     border-radius: 5px;
     cursor: pointer;
@@ -157,40 +217,45 @@ line-height: 23px;
     text-align: center;
 }
 .form-create-inputs{
-
     margin-right: 30px;
+    padding-left: 60px;
 }
 
 .form-create input, select{
-    width: 595px;
-    height: 46px;
+    width: 430px;
+    height: 40px;
     border:1px solid #000;
     border-radius:5px;
-    margin-bottom: 37px;
+    margin-bottom: 28px;
     outline: none;
-    font-size: 25px;
+    font-size: 20px;
+    padding: 0 15px;
 }
 
 .form-create label{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .form-create textarea{
     border: 1px solid #000;
-    width: 595px;
+    width: 430px;
     outline: none;
+    padding: 10px 15px;
+    font-size: 20px;
 }
 
 #submit-form{
     display: block;
     margin: 30px auto;
-    width: 200px;
-    height: 80px;
+    width: 180px;
+    height: 60px;
     background: #1F720B;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 500;
     color: #fff;
 }
+
+
