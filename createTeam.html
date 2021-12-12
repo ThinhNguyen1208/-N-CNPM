@@ -15,7 +15,6 @@
                 <img src="./img/pngwing 1.png" alt="">
                 <h1>My Champion</h1>
             </div>
-            <input class="home-menu-search" type="text" placeholder="Tìm giải đấu, đội bóng,...">
             <ul class="home-menu-btn">
                 <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Giải đấu</a></li>
@@ -24,10 +23,28 @@
                 <li><a href="#">Giới thiệu</a></li>
             </ul>
             <div class="home-menu-register">
-                <button>Đăng nhập</button>
-                <button>Đăng ký</button>
+                <div class="infors"><i class="far fa-bell"></i></div>
+                <div class="mail"><i class="far fa-envelope"></i></div>
+                <div class="avatar-name">
+                    <div class="avatar">
+                        <img src="./img/avt1.png" alt="">
+                    </div>
+                    <p>Lê Nguyễn Nhất Thọ</p>
+                </div>
+                <div class="pop-up-menu">
+                    <i class="fas fa-caret-down"></i>
+
+                    <div class="pop-up-submenu">
+                        <ul>
+                            <li><i class="fas fa-users"></i> <span>Quản lí đội bóng</span></li>
+                            <li><i class="fas fa-futbol"></i></i> <span>Quản lí giải đấu</span></li>
+                            <li><i class="fas fa-sign-out-alt"></i></i> <span>Đăng xuất</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="form-create">
             <div class="form-create-bg">
     
@@ -100,6 +117,13 @@
         changeBg_btn.onclick = function(){
             background.click();
         }
+
+        var pop_upBtn = document.querySelector(".pop-up-menu");
+        var pop_up = document.querySelector(".pop-up-submenu");
+        pop_upBtn.onclick = function(){
+            pop_up.classList.toggle("active");
+        }
+        
     </script>
 </body>
 </html>
