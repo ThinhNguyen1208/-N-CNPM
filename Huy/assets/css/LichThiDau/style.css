@@ -1,0 +1,329 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #a8ace4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* header */
+.home-menu{
+    display: flex;
+    padding: 5px;
+    background-color:rgba(17,53,139,0.77);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 0px 45px;
+    position: relative;
+    
+}
+.home-menu-logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    color: #FFFCFC;
+    font-weight: 500;
+}
+.home-menu-logo img{
+    position: relative;
+    top: 3px;
+    width: 24%;
+}
+
+.home-menu-btn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 350px;
+}
+
+.home-menu-btn li{
+    display: inline-block;
+    
+}
+
+.home-menu-btn li a{
+    color: #FFFCFC;
+    text-decoration: none;
+    display:  block ;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+
+.home-menu-btn li a:hover{
+    background-color: #F29036;
+    color: #050505;
+}
+
+.home-menu-register{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    margin-right: 30px;
+    align-items: center;
+    color: #fff;
+}
+
+.home-menu-register .far {
+    font-size: 18px;
+    color: #fff;
+}
+
+.home-menu-register .avatar-name{
+    display: flex;
+    align-items: center;
+}
+
+.home-menu-register .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.home-menu-register .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Container */
+#container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+/* Table left */
+#container .table_left {
+    width: 323px;
+    height: 600px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(76, 69, 69), rgb(231, 224, 224));
+}
+
+#container .header_table {
+    font-size: 20px;
+    font-weight: 550;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#container .table_match {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 62px;
+    margin: 40px 0;
+}
+
+#container .logo_team {
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+}
+
+#container .result_match {
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Table right */
+#container .table_right {
+    width: 323px;
+    height: 600px;
+    background-color: white;  
+    margin-top: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(76, 69, 69), rgb(231, 224, 224));
+}
+
+
+/* Main */
+#container .main {
+    width: calc(100% - 323px * 2 - 38px);
+}
+
+#container .main .cover {
+    width: 100%;
+    height: 335px;
+    background-color: #003573;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: linear-gradient(to right,#003573, #255791, #3b8eec);
+}
+
+#container .main .cover .img_left {
+    width: 270px;
+    height: 290px;
+    margin-left:  30px;
+    margin-top: calc((335px - 290px) / 2);
+}
+
+#container .main .cover .cup_img {
+    width: 270px;
+    height: 270px;
+    margin-top: calc((335px - 270px) / 2);
+    margin-right: 30px;
+}
+
+#container .main .cover .cover_header {
+    font-size: 33px;
+    font-weight: 550;
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#container .main .cover .favorite_match_team {
+    display: flex;
+    height: 43px;
+    width: calc(46px * 3);
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#container .main .cover .favorite_match_logo {
+    width: 43px;
+    height: 43px;
+    border-radius: 43px;
+    background-color: white;
+}
+
+#container .main .cover .time_match {
+    display: flex;
+}
+
+#container .main .cover .hour {
+    width: 50%;
+    height: 43px;
+}
+
+#container .main .cover .time_icon,
+#container .main .cover .date_icon {
+    color: white;
+    font-size: 20px;
+}
+
+#container .main .cover .location_match {
+    height: 43px;
+    margin: 15px 0;
+}
+
+#container .main .cover .location_icon {
+    color: white;
+    font-size: 22px;
+}
+
+#container .main .main_label {
+    width: 100%;
+    height: 70px;
+    font-size: 50px;
+    font-weight: 550;
+    line-height: 62px;
+    text-align: center;
+    color: rgb(24, 0, 158);
+    margin-top: 15px;
+    text-shadow: rgb(240, 255, 36) -1px -2px 0.3em;
+}
+
+#container .main .list_match {
+    width: 100%;
+}
+
+#container .main .detail_match {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    background-color: white;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
+#container .main .logo_team_match {
+    width: 43px;
+    height: 43px;
+    border-radius: 43px;
+    margin-top: calc((100px - 43px) / 2);
+}
+
+#container .main .time_match, 
+#container .main .location_match, 
+#container .main .heart_icon, 
+#container .main .arrow_right_icon {
+    color: #959FA8;
+    font-size: 20px;
+    margin-top: calc((100px - 20px) / 2);
+}
+
+#container .main .heart_icon {
+    color: red;
+}
+
+#container .main .list_match .vs {
+    font-size: 17px;
+    margin-top: calc((100px - 17px) / 2);
+    font-weight: 550;
+}
+
+#container .main .arrow_right_icon:hover {
+    cursor: pointer;
+    color: green;
+    font-weight: 600;
+}
+
+#container .main .heart_icon:hover {
+    cursor: pointer;
+}
+
+#container .main .view_all {
+    width: 160px;
+    height: 43px;
+    font-size: 24px;
+    line-height: 43px;
+    text-align: center;
+    font-weight: 550;
+    margin: 0 calc((100% - 160px) / 2);
+}
+
+#container .main .view_all:hover {
+    cursor: pointer;
+    color: rgb(255, 0, 34);
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    height: 48px;
+    background-color: #353163;
+    margin-top: 15px;
+    color: white;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: right;
+    font-style: italic;
+    padding-right: 140px;
+    box-sizing: border-box;
+    letter-spacing: 4px;
+}
